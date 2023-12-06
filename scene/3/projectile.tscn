@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c72kmacmvi888"]
+
+[ext_resource type="Script" path="res://scene/3/projectile.gd" id="1_w1n4o"]
+
+[node name="Projectile" type="CharacterBody2D"]
+collision_layer = 16
+script = ExtResource("1_w1n4o")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://uph7oxsx6suq"]
+
+[ext_resource type="Script" path="res://scene/2/gate.gd" id="1_71k1h"]
+
+[node name="Gate" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_71k1h")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://3gjag1ikbhuu"]
+
+[ext_resource type="Script" path="res://scene/2/portal.gd" id="1_0mpx5"]
+
+[node name="Portal" type="Area2D"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_0mpx5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]
